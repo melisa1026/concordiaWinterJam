@@ -28,6 +28,7 @@ public class playerMovement : MonoBehaviour
 
             if (faceRight && moveX < 0)
             {
+
                 faceRight = !faceRight;
                 transform.Rotate(0f, 180f, 0f);
             }
@@ -37,6 +38,7 @@ public class playerMovement : MonoBehaviour
                 faceRight = !faceRight;
                 transform.Rotate(0f, 180f, 0f);
             }
+
             playerRB.velocity = new Vector2(moveX * 7f, 0);
         }
 
