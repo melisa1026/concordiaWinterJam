@@ -6,7 +6,7 @@ public class CameraMove : MonoBehaviour
 {
 
     public GameObject player;
-    public float x;
+    private float x;
     public float min;
     public float max;
 
