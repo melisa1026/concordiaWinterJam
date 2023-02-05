@@ -46,7 +46,7 @@ public class EnemySound : MonoBehaviour
 
     float randTime()
     {
-        return Random.value * 2 + 2;
+        return Random.value * 30 + 30;
     }
 
 }

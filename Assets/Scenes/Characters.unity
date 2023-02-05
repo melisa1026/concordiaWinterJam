@@ -242,6 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 461f7cbcce7e07745845340a96197484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
+  caught: 0
+  Music: {fileID: 0}
+  TreeCrack: {fileID: 0}
+  Rooting: {fileID: 0}
 --- !u!50 &50381927
 Rigidbody2D:
   serializedVersion: 4
