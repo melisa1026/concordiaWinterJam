@@ -12,6 +12,10 @@ public class playerMovement : MonoBehaviour
     private bool faceRight = true, standing = true;
     public bool caught = false;
     bool visible = true;
+    public AudioSource Music;
+    public AudioSource TreeCrack;
+    public AudioSource Rooting;
+    
 
     // Start is called before the first frame update
     private void Start()
@@ -30,11 +34,17 @@ public class playerMovement : MonoBehaviour
                 playerRB.velocity = new Vector2(0, 0);
                 GetComponent<Animator>().Play("TreeRooting");
                 visible= false;
+                Music.Pause();
+                Rooting.Play();
+                TreeCrack.Play();
+                StartCoroutine(WaitForCrack());
+
             }
             if (Input.GetKeyUp("space"))
             {
                 visible = true;
                 GetComponent<Animator>().Play("TreeUnrooting");
+                Music.Play();
                 
             }
 
@@ -117,5 +127,13 @@ public class playerMovement : MonoBehaviour
     public void unroot()
     {
         rooted = false;
+    }
+
+    public IEnumerator WaitForCrack()
+    {
+        yield return new WaitForSeconds(1);
+        Rooting.Pause();
+        TreeCrack.Pause();
+
     }
 }
