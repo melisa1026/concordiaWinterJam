@@ -11,6 +11,7 @@ public class playerMovement : MonoBehaviour
     private bool rooted;
     private bool faceRight = true, standing = true;
     public bool caught = false;
+    bool visible = true;
 
     // Start is called before the first frame update
     private void Start()
@@ -28,10 +29,13 @@ public class playerMovement : MonoBehaviour
                 rooted = true;
                 playerRB.velocity = new Vector2(0, 0);
                 GetComponent<Animator>().Play("TreeRooting");
+                visible= false;
             }
             if (Input.GetKeyUp("space"))
             {
+                visible = true;
                 GetComponent<Animator>().Play("TreeUnrooting");
+                
             }
 
             if (!rooted)
@@ -74,9 +78,13 @@ public class playerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!rooted)
+        if (collision.gameObject.tag == "Lover")
         {
-            print("Caught by " + collision.gameObject.tag);
+            SceneManager.LoadScene("ending");
+        }
+        else if (visible)
+        {
+            print("Caught by " + collision.gameObject.name);
             if ((collision.gameObject.tag).CompareTo("LumberJack") == 0)
             {
                 WhoThrew.thrower = 0;
@@ -101,6 +109,9 @@ public class playerMovement : MonoBehaviour
         {
             print("SAFE");
         }
+
+
+
     }
 
     public void unroot()

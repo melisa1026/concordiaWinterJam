@@ -72,6 +72,6 @@ public class ending : MonoBehaviour
         // kissy kissy
         jenardMouth.SetActive(false);
         jeniceMouth.SetActive(false);
-        GetComponent<Animator>().Play("kissyissy");
+        GetComponent<Animator>().Play("kissyKissy");
     }
 }

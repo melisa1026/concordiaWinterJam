@@ -9,7 +9,7 @@ public class enemy : MonoBehaviour
     public float idleTime = 3;
     public float speed;
     float waitingTime = -1;
-    bool facingRight = true;
+    bool facingRight = false;
     bool idle = false;
     float angle = 0;
 
@@ -19,6 +19,10 @@ public class enemy : MonoBehaviour
     void Start()
     {
         startPos = transform.position.x;
+        if (transform.rotation.y == 0)
+        {
+            facingRight= true;
+        }
     }
 
     // Update is called once per frame
