@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 384946902}
   - component: {fileID: 384946901}
   - component: {fileID: 384946900}
-  - component: {fileID: 384946903}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -157,7 +156,7 @@ RectTransform:
   m_Children:
   - {fileID: 825943507}
   m_Father: {fileID: 1116449213}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -220,6 +219,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &384946901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,18 +269,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384946898}
   m_CullTransparentMesh: 1
---- !u!114 &384946903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384946898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 536e717e72c1c2a4ba83e598622e2c0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &578276200
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,18 +574,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730203747}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1109628946}
-  m_RootOrder: 3
+  m_Father: {fileID: 1116449213}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 678, y: 234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730203749
 MonoBehaviour:
@@ -852,7 +851,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1424,8 +1423,6 @@ RectTransform:
   m_Children:
   - {fileID: 1116449213}
   - {fileID: 1009328886}
-  - {fileID: 2111064931}
-  - {fileID: 730203748}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1463,6 +1460,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2111064931}
+  - {fileID: 730203748}
   - {fileID: 384946899}
   m_Father: {fileID: 1109628946}
   m_RootOrder: 0
@@ -1617,9 +1616,9 @@ MonoBehaviour:
     is to help Janard reach his dear Janice. Move him by using the arrow keys or
     the A - D keys. \r\nWhile rooting around for his love, you must be careful not
     to alert the humans! \nPress Space to root Janard to the ground, turning him
-    into a \u201Cregular tree\u201D. \nIf he\u2019s noticed by the humans, Janard
+    into a \u201Cregular tree\u201D. \nIf he\u2019s noticed by the humans, Jenard
     will be axed!\r\n\rLet\u2019s survive the night and reunite the loving couple!\r\n\nWelcome
-    to UNCHOPPED\r\r\nThe cats of New Year wish you Great Luck in your journey!\n"
+    to UPROOTED\r\r\nThe cats of New Year wish you Great Luck in your journey!\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1940,19 +1939,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111064930}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1271197808}
-  m_Father: {fileID: 1109628946}
-  m_RootOrder: 2
+  m_Father: {fileID: 1116449213}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 678, y: 234}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2111064932
 MonoBehaviour:
