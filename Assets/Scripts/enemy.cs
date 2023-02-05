@@ -24,23 +24,15 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //If Im not in idle time
+        
         if (Time.time > waitingTime)
         {
             if (transform.position.x <= startPos + distance && transform.position.x >= startPos)
             {
                 if (idle)
                 {
-                    print("MOVE");
-                    //Back up
-                    if (facingRight)
-                    {
-                        angle = 0;
-                    }
-                    else
-                    {
-                        angle = 180;
-                    }
+                    angle = facingRight ? 0 : 180;
+
                     transform.rotation = Quaternion.Euler(0f, angle, 0);  
                     idle = false;
                 }
@@ -52,14 +44,14 @@ public class enemy : MonoBehaviour
                 facingRight = !facingRight;
                 waitingTime = Time.time + idleTime;
                 transform.Translate(Vector2.left);
-                print("WHY");
             }
         }
         else
         {
-            transform.Rotate(0f, 180/idleTime * Time.deltaTime, 0f);
-            
+            transform.Rotate(0f, 180 / idleTime * Time.deltaTime, 0f);
         }
+            
+
 
     }
 }
