@@ -35,6 +35,8 @@ AnimationClip:
       value: {fileID: 21300000, guid: 16cbd8c5ff3e07647a7647c469853119, type: 3}
     - time: 0.5833333
       value: {fileID: 21300000, guid: a63886b508a8fcf4c880b5cbdd245740, type: 3}
+    - time: 0.8333333
+      value: {fileID: 21300000, guid: a63886b508a8fcf4c880b5cbdd245740, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -45,14 +47,30 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings: []
-    pptrCurveMapping: []
+    genericBindings:
+    - serializedVersion: 2
+      path: 0
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
+    pptrCurveMapping:
+    - {fileID: 21300000, guid: b1ab4b776cd0f12409463408233cec1d, type: 3}
+    - {fileID: 21300000, guid: b567db06a1d7e5a4e954e00ffa280b06, type: 3}
+    - {fileID: 21300000, guid: cf878ab7f5a6b924cabaff9b71a177bf, type: 3}
+    - {fileID: 21300000, guid: 3a870241021e98e4eafa7d749556a504, type: 3}
+    - {fileID: 21300000, guid: e72388f3f67161d4fb5515c9bb451f15, type: 3}
+    - {fileID: 21300000, guid: 02046aaa93c18ac47b312c3d1fa86156, type: 3}
+    - {fileID: 21300000, guid: 16cbd8c5ff3e07647a7647c469853119, type: 3}
+    - {fileID: 21300000, guid: a63886b508a8fcf4c880b5cbdd245740, type: 3}
+    - {fileID: 21300000, guid: a63886b508a8fcf4c880b5cbdd245740, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6666666
+    m_StopTime: 0.9166666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -72,7 +90,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.5833333
+  - time: 0.25
+    functionName: playAxSound
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.8333333
     functionName: switchToTree
     data: 
     objectReferenceParameter: {fileID: 0}
