@@ -247,13 +247,14 @@ GameObject:
   - component: {fileID: 281568873}
   - component: {fileID: 281568872}
   - component: {fileID: 281568871}
+  - component: {fileID: 281568874}
   m_Layer: 0
   m_Name: bench
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &281568871
 Animator:
   serializedVersion: 5
@@ -281,7 +282,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281568870}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -341,6 +342,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &281568874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281568870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4cc348d418d72489d1ad3eed0a546b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrower: 2
+  tree: {fileID: 1273401343}
 --- !u!1 &351641282
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,13 +828,14 @@ GameObject:
   - component: {fileID: 1462540201}
   - component: {fileID: 1462540200}
   - component: {fileID: 1462540199}
+  - component: {fileID: 1462540202}
   m_Layer: 0
   m_Name: Lumberjack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1462540199
 Animator:
   serializedVersion: 5
@@ -847,7 +863,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1462540198}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -907,6 +923,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1462540202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462540198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4cc348d418d72489d1ad3eed0a546b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrower: 0
+  tree: {fileID: 1273401343}
 --- !u!1 &1825680579
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,13 +1118,14 @@ GameObject:
   - component: {fileID: 1873978584}
   - component: {fileID: 1873978583}
   - component: {fileID: 1873978582}
+  - component: {fileID: 1873978585}
   m_Layer: 0
   m_Name: ClownCar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &1873978582
 Animator:
   serializedVersion: 5
@@ -1122,7 +1153,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1873978581}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1182,3 +1213,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 2.012}
+--- !u!114 &1873978585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873978581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4cc348d418d72489d1ad3eed0a546b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thrower: 1
+  tree: {fileID: 1273401343}
