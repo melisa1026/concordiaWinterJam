@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -76,8 +77,24 @@ public class playerMovement : MonoBehaviour
         if (!rooted)
         {
             print("Caught by " + collision.gameObject.tag);
+            if ((collision.gameObject.tag).CompareTo("LumberJack") == 0)
+            {
+                WhoThrew.thrower = 0;
+            }
+            if ((collision.gameObject.tag).CompareTo("ClownCar") == 0)
+            {
+                WhoThrew.thrower = 1;
+            }
+            
+            if ((collision.gameObject.tag).CompareTo("Sleeper") == 0)
+            {
+                WhoThrew.thrower = 2;
+            }
+
             playerRB.velocity = Vector2.zero;
             caught = true;
+            SceneManager.LoadScene("Lose");
+
         }
 
         else
