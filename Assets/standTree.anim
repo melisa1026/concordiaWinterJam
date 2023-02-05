@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: TreeUnrooting
+  m_Name: standTree
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,22 +20,12 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 9ef2804c62d33634e907be5e0fc7cc49, type: 3}
-    - time: 0.125
-      value: {fileID: 21300000, guid: 14efe4f2a9813f949b3b6571b668428d, type: 3}
-    - time: 0.25
-      value: {fileID: 21300000, guid: c47cdd826378d1647978d62ddadb726c, type: 3}
-    - time: 0.375
-      value: {fileID: 21300000, guid: e901486494d17aa4699db17498e175d2, type: 3}
-    - time: 0.5
-      value: {fileID: 21300000, guid: bdb046421c156a74d9593e1f410b9bf2, type: 3}
-    - time: 0.625
-      value: {fileID: 21300000, guid: c8e0302d56da60248a13a5702d3a528e, type: 3}
+      value: {fileID: 21300000, guid: 7707935c42f6cdf46bb90fe5d0186696, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 8
+  m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -50,18 +40,13 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 9ef2804c62d33634e907be5e0fc7cc49, type: 3}
-    - {fileID: 21300000, guid: 14efe4f2a9813f949b3b6571b668428d, type: 3}
-    - {fileID: 21300000, guid: c47cdd826378d1647978d62ddadb726c, type: 3}
-    - {fileID: 21300000, guid: e901486494d17aa4699db17498e175d2, type: 3}
-    - {fileID: 21300000, guid: bdb046421c156a74d9593e1f410b9bf2, type: 3}
-    - {fileID: 21300000, guid: c8e0302d56da60248a13a5702d3a528e, type: 3}
+    - {fileID: 21300000, guid: 7707935c42f6cdf46bb90fe5d0186696, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.75
+    m_StopTime: 0.016666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -80,11 +65,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0.625
-    functionName: unroot
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
