@@ -15,7 +15,6 @@ public class LoseScript : MonoBehaviour
     {
         GetComponent<Animator>().enabled = false;
 
-        Debug.Log("in");
         if(thrower == WhoThrew.thrower)
         {
             GetComponent<Animator>().enabled = true;
