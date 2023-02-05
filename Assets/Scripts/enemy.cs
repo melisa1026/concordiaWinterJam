@@ -31,7 +31,6 @@ public class enemy : MonoBehaviour
             {
                 if (idle)
                 {
-                    print("MOVE");
                     //Back up
                     if (facingRight)
                     {
@@ -52,7 +51,6 @@ public class enemy : MonoBehaviour
                 facingRight = !facingRight;
                 waitingTime = Time.time + idleTime;
                 transform.Translate(Vector2.left);
-                print("WHY");
             }
         }
         else
