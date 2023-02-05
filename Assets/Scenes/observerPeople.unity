@@ -544,7 +544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &339797983
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -605,7 +605,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339797982}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.99, y: -1.47, z: 0}
+  m_LocalPosition: {x: 473.5, y: -1.47, z: 0}
   m_LocalScale: {x: 0.302537, y: 0.302537, z: 0.302537}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2060,7 +2060,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415962144}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 138.9, y: -1.09, z: 0.039674934}
+  m_LocalPosition: {x: 198.1, y: -1.09, z: 0.039674934}
   m_LocalScale: {x: 0.26411366, y: 0.26411366, z: 0.26411366}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2080,6 +2080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 6
+  caught: 0
 --- !u!61 &1415962151
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3404,7 +3405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7150409734261952515, guid: cf0a8c36f0ea393438938e5ba6db0747, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -24.106583
+      value: -19.18
       objectReference: {fileID: 0}
     - target: {fileID: 7150409734261952515, guid: cf0a8c36f0ea393438938e5ba6db0747, type: 3}
       propertyPath: m_LocalPosition.y

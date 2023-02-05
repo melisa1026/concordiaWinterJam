@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 983444012964961081}
   m_Layer: 0
   m_Name: Flash Light (1)
-  m_TagString: Untagged
+  m_TagString: ClownCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
