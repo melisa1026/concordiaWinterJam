@@ -10,7 +10,7 @@ using TMPro;
 public class ending : MonoBehaviour
 {
 
-    public GameObject jenardMouth, jeniceMouth, textbox, bgTextbox;
+    public GameObject jenardMouth, jeniceMouth, textbox, bgTextbox, restartButton, happilyEverAfterText;
 
     void Start()
     {
@@ -78,5 +78,12 @@ public class ending : MonoBehaviour
         jenardMouth.SetActive(false);
         jeniceMouth.SetActive(false);
         GetComponent<Animator>().Play("kissyKissy");
+    }
+
+    public void restartButtonAppear()
+    {
+        restartButton.SetActive(true);
+        
+        happilyEverAfterText.SetActive(true);
     }
 }
