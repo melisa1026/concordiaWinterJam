@@ -34,6 +34,8 @@ public class ending : MonoBehaviour
         bgTextbox.SetActive(false);
         yield return new WaitForSeconds(0.1f);
         bgTextbox.SetActive(true);
+        
+        GetComponent<endingAudio>().playRomanticMusic();
 
         // Jenard!
         jeniceMouth.GetComponent<Animator>().Play("jenice mouth");
@@ -49,7 +51,9 @@ public class ending : MonoBehaviour
         textbox.GetComponent<TextMeshProUGUI>().text = "You came back for me!";
 
         
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.2f);
+        GetComponent<endingAudio>().playRomanticMusic();
+        yield return new WaitForSeconds(1.8f);
 
         // of course I came back for you baby
         jenardMouth.GetComponent<Animator>().Play("janard mouth");
@@ -65,6 +69,7 @@ public class ending : MonoBehaviour
         jeniceMouth.GetComponent<Animator>().Play("jenice mouth");
         jenardMouth.GetComponent<Animator>().Play("janard mouth");
         textbox.GetComponent<TextMeshProUGUI>().text = "I LOVE YOU";
+        
         
         yield return new WaitForSeconds(1);
         bgTextbox.SetActive(false);
