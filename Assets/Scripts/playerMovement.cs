@@ -7,7 +7,7 @@ public class playerMovement : MonoBehaviour
     private Rigidbody2D playerRB;
     public float speed;
     private bool rooted;
-    private bool faceRight = true;
+    private bool faceRight = true, standing = true;
 
     // Start is called before the first frame update
     private void Start()
@@ -46,12 +46,18 @@ public class playerMovement : MonoBehaviour
             }
 
             playerRB.velocity = new Vector2(moveX * speed, 0);
-        }
 
-
-        if (Input.GetKeyUp("space"))
-        {
-            rooted = false;
+            // player stands when not moving, walks when moving
+            if(playerRB.velocity == new Vector2(0, 0))
+            {
+                GetComponent<Animator>().Play("standTree");
+                standing = true;
+            }
+            if(standing && playerRB.velocity != new Vector2(0, 0))
+            {
+                GetComponent<Animator>().Play("TreeWalkAnim");
+                standing = false;
+            }
         }
         //if (Input.GetButtonDown("Space"))
         //{
@@ -70,5 +76,10 @@ public class playerMovement : MonoBehaviour
         {
             print("SAFE");
         }
+    }
+
+    public void unroot()
+    {
+        rooted = false;
     }
 }
