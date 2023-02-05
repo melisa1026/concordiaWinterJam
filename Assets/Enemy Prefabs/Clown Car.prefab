@@ -97,7 +97,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.47510314, y: -0.00000047683716}
+  m_Offset: {x: -0.7942393, y: -0.00000047683716}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -108,7 +108,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 13.659792, y: 10.53}
+  m_Size: {x: 13.021521, y: 10.53}
   m_EdgeRadius: 0
 --- !u!1 &983444013872659647
 GameObject:
@@ -122,9 +122,10 @@ GameObject:
   - component: {fileID: 983444013872659640}
   - component: {fileID: 983444013872659641}
   - component: {fileID: 983444013872659646}
+  - component: {fileID: 6455175741804587766}
   m_Layer: 0
   m_Name: Clown Car
-  m_TagString: Untagged
+  m_TagString: ClownCar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -230,5 +231,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 30
-  idleTime: 1
+  idleTime: 1.5
   speed: 11
+--- !u!61 &6455175741804587766
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983444013872659647}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.5836148, y: 0.74453497}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 20.48, y: 15.36}
+    newSize: {x: 20.48, y: 15.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.327361, y: 7.2942142}
+  m_EdgeRadius: 0
