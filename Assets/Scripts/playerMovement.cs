@@ -20,7 +20,12 @@ public class playerMovement : MonoBehaviour
         if(Input.GetKeyDown("space")){
             rooted = true;
             playerRB.velocity = new Vector2(0, 0);
+            GetComponent<Animator>().Play("TreeRooting");
         }
+        if (Input.GetKeyUp("space"))
+            {
+                GetComponent<Animator>().Play("TreeUnrooting");
+            }
 
         if (!rooted)
         {
