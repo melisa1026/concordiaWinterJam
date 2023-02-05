@@ -5,6 +5,7 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     private Rigidbody2D playerRB;
+    public float speed;
     private bool rooted;
     private bool faceRight = true;
 
@@ -44,7 +45,7 @@ public class playerMovement : MonoBehaviour
                 transform.Rotate(0f, 180f, 0f);
             }
 
-            playerRB.velocity = new Vector2(moveX * 7f, 0);
+            playerRB.velocity = new Vector2(moveX * speed, 0);
         }
 
 
