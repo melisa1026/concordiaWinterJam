@@ -20,10 +20,7 @@ public class Sleeper : MonoBehaviour
 
     void SwitchCollider()
     {
-        //Toggle the Collider on and off when pressing the space bar
         SleepCollider.enabled =  !SleepCollider.enabled;
-        //Output to console whether the Collider is on or not
 
-        Debug.Log("Collider.enabled = " + SleepCollider.enabled);
     }
 }
