@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoseScript : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class LoseScript : MonoBehaviour
 
     public int thrower;
     public GameObject tree;
-    public GameObject message, textBoxBg;
 
     void Start()
     {
@@ -40,17 +40,4 @@ public class LoseScript : MonoBehaviour
         GetComponent<Animator>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
     }
-
-    public void endingMessage()
-    {
-
-    }
-
-    // public IEnumerator()
-    // {
-    //     for(int i = 0; i < 50; i++)
-    //     {
-
-    //     }
-    // }
 }
