@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class LoseScript : MonoBehaviour
@@ -14,13 +15,22 @@ public class LoseScript : MonoBehaviour
     void Start()
     {
         GetComponent<Animator>().enabled = false;
-
-        if(thrower == WhoThrew.thrower)
+        if (thrower == WhoThrew.thrower)
         {
-            GetComponent<Animator>().enabled = true;
             GetComponent<SpriteRenderer>().enabled = true;
         }
         tree.SetActive(false);
+
+        StartCoroutine(throwObject());
+    }
+
+    public IEnumerator throwObject()
+    {
+        yield return new WaitForSeconds(1);
+        if(thrower == WhoThrew.thrower)
+        {
+            GetComponent<Animator>().enabled = true;
+        }
     }
 
     public void switchToTree()
