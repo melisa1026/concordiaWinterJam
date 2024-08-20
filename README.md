@@ -6,3 +6,5 @@ There are different way to "die" in this game. This is activated when the Player
 
 
 To play the game, you need the Standard Web Application (HTML5, Java, JavaScript, Flash) and access to the website itch.io.
+
+Play here: https://melpgames.itch.io/uprooted
